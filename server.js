@@ -10,7 +10,7 @@ const app = express();
  * Need to have mongoDb up and running in your local machine
  */
 mongoose.connect(dbConfig.DB_URL);
-const db = mongoose.connection;
+const db = mongoose.connection ;
 
 db.on("error", ()=>{
     console.log("Error while connecting to Database");
